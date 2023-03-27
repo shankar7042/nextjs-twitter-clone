@@ -22,11 +22,13 @@ const Sidebar = () => {
       label: "Notifications",
       href: "/notifications",
       icon: BsBellFill,
+      auth: true,
     },
     {
       label: "Profile",
       href: "/profile",
       icon: FaUserAlt,
+      auth: true,
     },
   ];
   return (
@@ -40,6 +42,7 @@ const Sidebar = () => {
               href={item.href}
               icon={item.icon}
               label={item.label}
+              auth={item.auth}
             />
           ))}
           {currentUser && (
