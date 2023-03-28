@@ -17,7 +17,9 @@ const FollowBar = () => {
               <Avatar userId={user.id} />
               <div className="flex flex-col">
                 <p className="text-white font-semibold text-sm">{user.name}</p>
-                <p className="text-neutral-400 text-sm">@{user.username}</p>
+                <p className="text-neutral-400 text-sm hover:underline hover:text-neutral-200 transition cursor-pointer">
+                  @{user.username}
+                </p>
               </div>
             </div>
           ))}
