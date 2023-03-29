@@ -6,7 +6,6 @@ import UserHero from "@/components/users/UserHero";
 import UserBio from "@/components/users/UserBio";
 
 const UserView = () => {
-  console.log("Userview page");
   const router = useRouter();
   const { userId } = router.query;
 
